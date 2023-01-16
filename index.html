@@ -46,6 +46,11 @@
             
             // Drawing the racket on the right side
             canvasCtx.fillRect(window.innerWidth - lineWidth - 10, 200, lineWidth, 200)
+
+            // Drawing the ball
+            canvasCtx.beginPath()
+            canvasCtx.arc(500, 300, 20, 0, 2 * Math.PI, false)
+            canvasCtx.fill()
         }
 
         setup()
